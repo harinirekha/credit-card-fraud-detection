@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        tools:ignore="SelectedPhotoAccess" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/plant"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/plant"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UpliftingTheFarmerThroughAConnectedEcosystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.AdminRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RequestActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".response.NotificationService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ViewUserOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DistinctOrders"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewOrderList"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Inventory"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".room.FertilizerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TransactionSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewList"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddFarmers"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FarmerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/cardView"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_view"
+                android:drawableLeft="@drawable/baseline_man_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/background_Tint"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/text_view"
+                android:drawableLeft="@drawable/baseline_mark_email_unread_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/background_Tint"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Email"
+                android:inputType="text|textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/editTextName"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/editTextName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+            <TextView
+                android:id="@+id/editTextMoblie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/text_view"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Mobile No."
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+            <TextView
+                android:id="@+id/editTextAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_view"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/background_Tint"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:justificationMode="inter_word"
+                android:maxLines="4"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMoblie" />
+
+
+            <TextView
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/text_view"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/background_Tint"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextName"
+                app:layout_constraintStart_toStartOf="@+id/editTextName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAdress" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/background_Tint"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/background_Tint">
+
+                    <Button
+                        android:id="@+id/userLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/background_Tint"
+                        android:fontFamily="@font/roboto"
+                        android:text="Logout"
+                        android:textSize="12sp"
+                        app:icon="@drawable/logout123"
+                        app:iconTint="@color/textview_background_color" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

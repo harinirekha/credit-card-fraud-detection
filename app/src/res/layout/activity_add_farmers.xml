@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddFarmers">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/driverLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/colorBackground"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/farmer"
+                app:tint="@color/background_Tint" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:hintTextColor="?android:attr/textColorPrimary"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:startIconTint="@color/background_Tint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/background_Tint"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter Farmer Name"
+                    android:textColor="?android:attr/editTextColor"
+                    android:textColorHighlight="?android:attr/editTextColor"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="#2196F3"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:hintTextColor="?android:attr/textColorPrimary"
+                app:startIconDrawable="@drawable/baseline_mark_email_unread_24"
+                app:startIconTint="@color/background_Tint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter Farmer Email"
+                    android:textColor="?android:attr/editTextColor"
+                    android:textColorHighlight="?android:attr/editTextColor"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="#2196F3"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:hintTextColor="?android:attr/textColorPrimary"
+                app:startIconDrawable="@drawable/baseline_password_24"
+                app:startIconTint="@color/background_Tint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter Farmer Password"
+                    android:textColor="?android:attr/editTextColor"
+                    android:textColorHighlight="?android:attr/editTextColor"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="#2196F3"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:hintTextColor="?android:attr/textColorPrimary"
+                app:startIconDrawable="@drawable/baseline_location_on_24"
+                app:startIconTint="@color/background_Tint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter Farm Location"
+                    android:textColor="?android:attr/editTextColor"
+                    android:textColorHighlight="?android:attr/editTextColor"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="#2196F3"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:hintTextColor="?android:attr/textColorPrimary"
+                app:startIconDrawable="@drawable/baseline_phone_24"
+                app:startIconTint="@color/background_Tint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter Mobile No."
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="?android:attr/editTextColor"
+                    android:textColorHighlight="?android:attr/editTextColor"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="#2196F3"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="24dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit Ratings"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:gravity="start"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0" />
+
+        </LinearLayout>
+
+
+           
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="32dp"
+                android:backgroundTint="@color/background_Tint"
+                android:fontFamily="@font/roboto"
+                android:text="Confirm"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/loadingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
